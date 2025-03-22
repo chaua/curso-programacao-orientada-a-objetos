@@ -34,6 +34,12 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
    * Leva diretamente à página especificada.
    * Só funciona se o livro estiver aberto **e** a página for válida (entre 1 e total de páginas).
 
+{% embed url="https://gist.github.com/chaua/264f1cc4971f237bec29b8eccbc03791" %}
+
+{% embed url="https://gist.github.com/chaua/02118ee69550f5c6cfa8c0629e97bad7" %}
+
+
+
 ## Exercício 2: **Classe ContaBancaria**
 
 **Contexto:** Modele uma conta bancária simples.
