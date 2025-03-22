@@ -87,8 +87,9 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 4. **mudarCor(String novaCor)**
    * Altera a cor da luz.
    * Pode ser usado em qualquer momento.
+5. **queimar()**
 
-Claro! Aqui vão **mais 3 exercícios**, também baseados em objetos do mundo real, com descrições detalhadas de atributos e a lógica completa de cada método.
+* Não acende mais se for ligada e desligada 5 vezes
 
 ## Exercício 4: **Classe Filme**
 
