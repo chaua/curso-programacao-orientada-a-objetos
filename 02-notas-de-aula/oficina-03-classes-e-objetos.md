@@ -1,14 +1,22 @@
-# ✍️ Oficina I
+---
+description: Definição de classes, objetos, atributos e métodos.
+---
+
+# 💻 Oficina 03 - Classes e Objetos
 
 ## Instruções
 
 Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe com o método main para criar e testar os objetos.
 
-## Exercício 1: **Classe Livro**
+## Exercício 1
 
-**Contexto:** Crie uma classe para representar um **livro físico**.
+<details>
 
-**📌 Atributos:**
+<summary>Classe Livro</summary>
+
+> Crie uma classe para representar um **livro físico**.
+
+### **Atributos**
 
 * Título do livro
 * Autor
@@ -16,7 +24,7 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 * Página atual
 * Se está aberto (sim/não)
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **abrir()**
    * Torna o estado do livro "aberto".
@@ -34,17 +42,17 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
    * Leva diretamente à página especificada.
    * Só funciona se o livro estiver aberto **e** a página for válida (entre 1 e total de páginas).
 
-{% embed url="https://gist.github.com/chaua/264f1cc4971f237bec29b8eccbc03791" %}
+</details>
 
-{% embed url="https://gist.github.com/chaua/02118ee69550f5c6cfa8c0629e97bad7" %}
+## Exercício 2
 
+<details>
 
+<summary>Classe ContaBancaria</summary>
 
-## Exercício 2: **Classe ContaBancaria**
+> Modele uma conta bancária simples.
 
-**Contexto:** Modele uma conta bancária simples.
-
-**📌 Atributos:**
+### **Atributos**
 
 * Nome do titular
 * Número da conta
@@ -52,7 +60,7 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 * Limite de saque diário
 * Valor sacado no dia
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **depositar(double valor)**
    * Adiciona o valor ao saldo.
@@ -68,17 +76,23 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 4. **resetarLimiteDiario()**
    * Zera o valor sacado no dia (simulando virada de dia).
 
-## Exercício 3: **Classe Lampada**
+</details>
 
-**Contexto:** Modele uma lâmpada com controle de estado e intensidade.
+## Exercício 3
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe Lampada</summary>
+
+> Modele uma lâmpada com controle de estado e intensidade.
+
+### **Atributos**
 
 * Se está ligada (sim/não)
 * Intensidade da luz (0 a 100)
 * Cor da luz (ex: branco, amarelo, azul)
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **ligar()**
    * Muda o estado para ligada.
@@ -94,14 +108,19 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
    * Altera a cor da luz.
    * Pode ser usado em qualquer momento.
 5. **queimar()**
+   * Não acende mais se for ligada e desligada 5 vezes
 
-* Não acende mais se for ligada e desligada 5 vezes
+</details>
 
-## Exercício 4: **Classe Filme**
+## Exercício 4
 
-**Contexto:** Modele um filme em um sistema de streaming.
+<details>
 
-**📌 Atributos:**
+<summary>Classe Filme</summary>
+
+> Modele um filme em um sistema de streaming.
+
+### **Atributos**
 
 * Título
 * Duração total (em minutos)
@@ -109,7 +128,7 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 * Se está em reprodução (sim/não)
 * Se está pausado (sim/não)
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **reproduzir()**
    * Inicia ou continua o filme.
@@ -129,18 +148,24 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 5. **reiniciar()**
    * Volta o filme para o minuto 0 e pausa.
 
-## Exercício 5: **Classe Elevador**
+</details>
 
-**Contexto:** Modele um elevador de prédio.
+## Exercício 5
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe Elevador</summary>
+
+> Modele um elevador de prédio.
+
+### **Atributos**
 
 * Andar atual
 * Total de andares do prédio
 * Capacidade máxima de pessoas
 * Quantidade de pessoas presentes
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **entrar()**
    * Adiciona uma pessoa ao elevador.
@@ -158,17 +183,23 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
    * Move diretamente para um andar válido (entre 0 e total de andares).
    * Só funciona se o destino for diferente do atual.
 
-## Exercício 6: **Classe ContaGotas**
+</details>
 
-**Contexto:** Modele um frasco de remédio com conta-gotas.
+## Exercício 6
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe ContaGotas</summary>
+
+Modele um frasco de remédio com conta-gotas.
+
+### **Atributos**
 
 * Capacidade total (em ml)
 * Quantidade atual (em ml)
 * Tamanho da dose padrão (em ml)
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **pingar()**
    * Reduz a quantidade atual em uma dose.
@@ -181,17 +212,23 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 4. **esvaziar()**
    * Zera a quantidade atual.
 
-## Exercício 7: **Classe RelogioDespertador**
+</details>
 
-**Contexto:** Modele um relógio despertador digital.
+## Exercicio 7
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe RelogioDespertador</summary>
+
+> Modele um relógio despertador digital.
+
+### **Atributos**
 
 * Hora atual (em formato 24h: hh:mm)
 * Hora do alarme
 * Alarme ativado (sim/não)
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **ajustarHora(String novaHora)**
    * Define a hora atual no formato "hh:mm".
@@ -206,17 +243,23 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 5. **verificarAlarme()**
    * Se o alarme estiver ativado e a hora atual for igual à hora do alarme, imprime “Alarme tocando!”.
 
-## Exercício 8: **Classe Termometro**
+</details>
 
-**Contexto:** Modele um termômetro digital com histórico.
+## Exercício 8
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe Termometro</summary>
+
+> Modele um termômetro digital com histórico.
+
+**Atributos**
 
 * Temperatura atual
 * Unidade de medida (Celsius ou Fahrenheit)
 * Lista de últimas 5 temperaturas registradas
 
-**✅ Métodos:**
+**Métodos**
 
 1. **registrarTemperatura(float valor)**
    * Atualiza a temperatura atual.
@@ -228,17 +271,23 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 4. **mostrarHistorico()**
    * Mostra as últimas 5 temperaturas registradas.
 
-## Exercício 9: **Classe CarrinhoDeCompras**
+</details>
 
-**Contexto:** Modele um carrinho de compras online.
+## Exercício 9
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe CarrinhoDeCompras</summary>
+
+> Modele um carrinho de compras online.
+
+### Atributos
 
 * Lista de itens (nome e preço)
 * Quantidade total de itens
 * Valor total da compra
 
-**✅ Métodos:**
+### **Métodos**
 
 1. **adicionarItem(String nome, double preco)**
    * Adiciona um item à lista.
@@ -251,16 +300,22 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
 4. **finalizarCompra()**
    * Exibe o total e esvazia o carrinho.
 
-## 🔹 Exercício 10: **Classe Cofrinho**
+</details>
 
-**Contexto:** Modele um cofrinho para guardar moedas.
+## Exercicio 10
 
-**📌 Atributos:**
+<details>
+
+<summary>Classe Cofrinho</summary>
+
+> Modele um cofrinho para guardar moedas.
+
+### Atributos
 
 * Valor total guardado
 * Quantidade de moedas de cada tipo (R$0.10, R$0.25, R$0.50, R$1.00)
 
-**✅ Métodos:**
+### Métodos
 
 1. **adicionarMoeda(double valor)**
    * Aceita somente moedas válidas: 0.10, 0.25, 0.50 ou 1.00.
@@ -272,3 +327,10 @@ Crie as classes propostas nos exercícios. Para cada exercício, crie uma classe
    * Mostra o valor acumulado.
 4. **quantidadePorTipo()**
    * Mostra quantas moedas tem de cada tipo.
+
+</details>
+
+
+
+##
+

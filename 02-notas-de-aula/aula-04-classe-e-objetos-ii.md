@@ -1,6 +1,6 @@
-# 🤖 Aula 06 - Classe e Objetos
+# 📦 Aula 04 - Classe e Objetos II
 
-## Modificadores de Acesso e Encapsulamento
+## :orange\_book: Modificadores de Acesso
 
 Em POO, proteger os dados internos de um objeto é uma **boa prática essencial para garantir a segurança, a integridade e a modularidade do sistema**. Para isso, utilizamos os chamados **modificadores de acesso**.
 
@@ -23,7 +23,7 @@ Declarar **atributos como `private`** significa que **nenhuma outra classe pode 
 * Controle de regras de negócios
 * Manutenção e refatoração
 
-### **Encapsulamento**
+## :orange\_book: **Encapsulamento**
 
 O **encapsulamento** é o princípio da POO que **protege os dados internos** de um objeto, permitindo que o acesso a eles seja **controlado**.
 
@@ -41,11 +41,13 @@ public class Pessoa {
 }
 ```
 
-> Sem o `private`, qualquer parte do código poderia fazer:
->
-> `pessoa.nome = null;`
->
-> Isso pode corromper o estado interno do objeto.
+{% hint style="warning" %}
+Sem o `private`, qualquer parte do código poderia fazer:
+
+`pessoa.nome = null;`
+
+Isso pode corromper o estado interno do objeto.
+{% endhint %}
 
 ### **Controle de regras de negócio**
 
@@ -70,8 +72,6 @@ pessoa.idade = -999;
 ### **Facilidade de manutenção e refatoração**
 
 Ao restringir o acesso direto, podemos **modificar a estrutura interna da classe** no futuro sem impactar outras partes do sistema, desde que os métodos públicos (a "interface" da classe) continuem os mesmos.
-
-### Exemplos
 
 Exemplo: Atributo público (má prática)
 

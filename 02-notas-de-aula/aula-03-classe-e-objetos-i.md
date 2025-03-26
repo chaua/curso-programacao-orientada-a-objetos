@@ -1,65 +1,6 @@
-# 🤖 Aula 05 - Classe e Objetos
+# 📦 Aula 03 - Classe e Objetos I
 
-## TAD – Tipo Abstrato de Dados
-
-**TAD** significa **Tipo Abstrato de Dados**. Trata-se de um **modelo teórico** que define um **conjunto de dados** e as **operações válidas** que podem ser realizadas sobre esses dados, **sem revelar como essas operações são implementadas** internamente.
-
-Ou seja, quando falamos de TAD, estamos preocupados apenas com:
-
-* **O que** pode ser feito com os dados;
-* **Quais operações** estão disponíveis;
-* E **quais regras** essas operações devem obedecer.
-
-{% hint style="info" %}
-Importante: **não nos importamos ainda com a linguagem de programação ou detalhes de implementação**.
-{% endhint %}
-
-### Componentes de um TAD
-
-Um TAD é composto basicamente por dois elementos:
-
-* **Modelo matemático (estrutura de dados)**: define como os dados são organizados logicamente. Pode ser um vetor, uma matriz, um ponto no plano cartesiano, uma pilha, uma fila, entre outros.
-* **Conjunto de operações válidas (funções)**: determina as ações que podem ser realizadas com os dados, como inserir, remover, somar, buscar, calcular distância, etc.
-
-### Exemplo: TAD `Ponto` (em C)
-
-Vamos analisar um TAD definido no arquivo `exemplo.h`:
-
-```c
-typedef struct {
-    double x;
-    double y;
-} Ponto;
-```
-
-Essa estrutura representa um **modelo matemático** de um ponto no plano cartesiano 2D, com duas coordenadas: `x` e `y`.
-
-Agora vejamos as **operações associadas** a esse TAD:
-
-```c
-Ponto pontoSoma(Ponto p1, Ponto p2);
-Ponto pontoSubt(Ponto p1, Ponto p2);
-float pontoCalculaDistancia(Ponto p1, Ponto p2);
-```
-
-Cada função define uma **ação que pode ser feita com um Ponto**:
-
-* `pontoSoma`: soma as coordenadas de dois pontos.
-* `pontoSubt`: subtrai dois pontos.
-* `pontoCalculaDistancia`: calcula a distância entre dois pontos no plano cartesiano.
-
-Essas operações, quando bem definidas, permitem que o **usuário utilize o TAD sem saber como essas funções são implementadas por dentro** — esse é o princípio da **abstração**.
-
-#### Objetivos principais do TAD
-
-* **Modularização**: divide o programa em partes lógicas e independentes.
-* **Reutilização**: podemos usar o TAD em diferentes programas.
-* **Manutenção**: alterações internas não afetam o código do usuário, desde que a interface (operações disponíveis) permaneça a mesma.
-* **Encapsulamento**: os dados ficam protegidos e só são manipulados por meio das operações definidas.
-
-Perfeito! Vamos agora aprofundar a **Parte 2: Conceito de Classe**, com uma explicação **bem detalhada**, técnica e didática, adequada ao contexto acadêmico de cursos como **Ciência da Computação** e **Análise e Desenvolvimento de Sistemas**.
-
-## Conceito de Classe
+## :orange\_book: Conceito de Classe
 
 Na **Programação Orientada a Objetos (POO)**, uma **classe** é uma **estrutura que define um novo tipo de dado**, baseada na abstração de um **Tipo Abstrato de Dados (TAD)**. Ela combina, em uma única unidade:
 
@@ -100,7 +41,7 @@ public class Pessoa {
 }
 ```
 
-### Atributos (ou Campos)
+### Atributos
 
 Os **atributos** são variáveis que pertencem à classe. Eles representam as **características** de cada objeto que será criado.
 
@@ -182,11 +123,9 @@ float calcularIMC() {
 * Um método pode receber **parâmetros** para realizar operações com dados externos.
 * Métodos podem **acessar livremente os atributos** da classe.
 
-## Conceito de Objeto
+## :orange\_book: Conceito de Objeto
 
-
-
-Na **Programação Orientada a Objetos (POO)**, um **objeto** é a **instância concreta de uma classe**.
+Na **Programação Orientada a Objetos**, um **objeto** é a **instância concreta de uma classe**.
 
 Podemos entender um objeto como uma **entidade individual** que possui:
 
