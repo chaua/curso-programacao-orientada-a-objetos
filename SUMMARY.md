@@ -19,7 +19,7 @@
   * [📦 Aula 04 - Classe e Objetos II](02-notas-de-aula/aula-04-classe-e-objetos-ii.md)
   * [💻 Oficina 03 - Classes e Objetos](02-notas-de-aula/oficina-03-classes-e-objetos.md)
 * [Códigos-fontes](03-codigos-fontes/README.md)
-  * [💾 Exemplo](03-codigos-fontes/exemplo.md)
+  * [💾 Oficina 03](03-codigos-fontes/oficina-03.md)
 * [Provas](04-provas/README.md)
   * [📝 Prova 01](04-provas/prova-01.md)
   * [📝 Prova 02](04-provas/prova-02.md)
