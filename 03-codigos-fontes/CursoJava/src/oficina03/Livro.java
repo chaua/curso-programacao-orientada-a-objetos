@@ -1,39 +1,7 @@
-package oficina03;/*
+package oficina03;
 
-
-Título do livro
-Autor
-Número total de páginas
-Página atual
-Se está aberto (sim/não)
-✅ Métodos:
-
-    abrir()
-        Torna o estado do livro "aberto".
-
-Só altera se ainda estiver fechado.
-fechar()
-
-    Torna o estado do livro "fechado".
-
-Só altera se estiver aberto.
-virarPagina()
-
-    Incrementa a página atual em 1.
-
-Só pode ser executado se o livro estiver aberto e ainda não estiver na última página.
-voltarPagina()
-
-    Decrementa a página atual em 1.
-
-Só pode ser executado se o livro estiver aberto e a página atual for maior que 1.
-irParaPagina(int pagina)
-
-    Leva diretamente à página especificada.
-
-Só funciona se o livro estiver aberto e a página for válida (entre 1 e total de páginas).
- */
-
+// CLASSE
+// Representa um livro
 public class Livro {
 
     // ATRIBUTOS
