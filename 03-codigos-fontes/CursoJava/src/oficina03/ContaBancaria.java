@@ -1,47 +1,5 @@
 package oficina03;
 
-/**
- * Atributos
- *
- *     Nome do titular
- *
- *     Número da conta
- *
- *     Saldo atual
- *
- *     Limite de saque diário
- *
- *     Valor sacado no dia
- *
- * Métodos
- *
- *     depositar(double valor)
- *
- *         Adiciona o valor ao saldo.
- *
- *         Só pode ser usado se o valor for positivo.
- *
- *     sacar(double valor)
- *
- *         Subtrai o valor do saldo.
- *
- *         Só pode ser feito se:
- *
- *             Valor for positivo
- *
- *             Valor não ultrapassar o limite diário
- *
- *             Saldo suficiente
- *
- *     consultarSaldo()
- *
- *         Exibe o saldo atual.
- *
- *     resetarLimiteDiario()
- *
- *         Zera o valor sacado no dia (simulando virada de dia).
- */
-
 // CLASSE
 // - Nome das classes começam com maiúsculo
 public class ContaBancaria {
