@@ -1,7 +1,5 @@
 ---
-description: >-
-  Este cronograma apresenta a organização das avaliações da disciplina de
-  Inteligência Artificial.
+description: Este cronograma apresenta a organização das avaliações da disciplina de POO.
 ---
 
 # 🗓️ Avaliações

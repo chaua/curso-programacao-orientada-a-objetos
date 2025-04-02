@@ -17,7 +17,7 @@
     * [Entrada e Saída de Dados](02-notas-de-aula/aula-02-java-basico/entrada-e-saida-de-dados.md)
   * [📦 Aula 03 - Classe e Objetos I](02-notas-de-aula/aula-03-classe-e-objetos-i.md)
   * [📦 Aula 04 - Classe e Objetos II](02-notas-de-aula/aula-04-classe-e-objetos-ii.md)
-  * [💻 Oficina 03 - Classes e Objetos](02-notas-de-aula/oficina-03-classes-e-objetos.md)
+  * [💻 Oficina 03](02-notas-de-aula/oficina-03.md)
   * [💻 Oficina 04](02-notas-de-aula/oficina-04/README.md)
     * [Construtores](02-notas-de-aula/oficina-04/construtores.md)
     * [Destrutores](02-notas-de-aula/oficina-04/destrutores.md)
