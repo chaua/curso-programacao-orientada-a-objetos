@@ -22,6 +22,7 @@
     * [Construtores](02-notas-de-aula/oficina-04/construtores.md)
     * [Destrutores](02-notas-de-aula/oficina-04/destrutores.md)
     * [Tipos Referência](02-notas-de-aula/oficina-04/tipos-referencia.md)
+  * [💻 Oficina 05](02-notas-de-aula/oficina-05.md)
 * [Códigos-fontes](03-codigos-fontes/README.md)
   * [💾 Oficina 03](03-codigos-fontes/oficina-03.md)
 * [Provas](04-provas/README.md)
