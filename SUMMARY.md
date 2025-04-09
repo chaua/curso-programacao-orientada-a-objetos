@@ -24,6 +24,7 @@
     * [Tipos Referência](02-notas-de-aula/oficina-04/tipos-referencia.md)
   * [💻 Oficina 05](02-notas-de-aula/oficina-05.md)
 * [Códigos-fontes](03-codigos-fontes/README.md)
+  * [🍎 Aulas](03-codigos-fontes/aulas.md)
   * [💾 Oficina 03](03-codigos-fontes/oficina-03.md)
 * [Provas](04-provas/README.md)
   * [📝 Prova 01](04-provas/prova-01.md)
