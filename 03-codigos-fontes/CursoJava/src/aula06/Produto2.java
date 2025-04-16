@@ -30,7 +30,7 @@ public class Produto2 {
     }
 
     public void imprime() {
-        System.out.printf("%10s - %02d - %.2f: total = %.2f\n", nome, quantidade, preco, quantidade * preco);
+        System.out.printf("%10s - %02d - %.2f: total = %.2f\n", nome, quantidade, getPreco(), getTotal());
     }
 
     // Solução 1: fornece um método específico para alterar o atributo

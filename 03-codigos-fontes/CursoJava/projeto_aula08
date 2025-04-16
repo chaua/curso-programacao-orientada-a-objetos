@@ -1,0 +1,28 @@
+Agenda de Enderecos
+===================
+
+1) Cadastrar um contato
+2) Deletar um contato
+3) Pesquisar um contato
+4) Editar um contato
+5) Listar todos os contatos
+
+- Salvar os dados em disco
+- Carregar dados em disco
+
+Entidade / Modelo
+=================
+
+Contato
+- Nome
+- Telefone
+- Email
+- Aniversario
+
+Endereco
+- Rua
+- Numero
+- Bairro
+- Cidade
+- Estado
+
