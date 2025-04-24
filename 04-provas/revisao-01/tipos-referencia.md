@@ -31,6 +31,16 @@ c. `false` e `false`\
 d. `false` e `true`\
 e. `true` e erro de compilação
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **d. `false` e `true`**
+
+**Justificativa:** `p1 == p2` compara **referências** e retorna `false` porque `p1` e `p2` apontam para objetos diferentes. Já `p1.nome == p2.nome` compara **referências de `String`**, que neste caso são **iguais**, pois `"Café"` é uma **string literal** e o Java reaproveita a mesma instância na pool de strings. Isso ocorre devido à **internação de literais de string** em Java.
+
+</details>
+
 ## Questão 2
 
 Analise o código:
@@ -61,6 +71,16 @@ b. 0\
 c. 99\
 d. Erro de compilação\
 e. Valor indefinido
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. 99**
+
+**Justificativa:** `Caixa` é um tipo por referência. A função `altera()` modifica o conteúdo do objeto passado como argumento. Como `cx` e `c` referenciam o **mesmo objeto** na memória, a modificação `c.valor = 99` afeta diretamente o objeto referenciado por `cx`.
+
+</details>
 
 ## Questão 3
 
@@ -93,6 +113,16 @@ b. 50\
 c. 0\
 d. Erro de compilação\
 e. Valor indefinido
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **Resposta: a. 10**
+
+**Justificativa:** Embora `Objeto` seja um tipo por referência, dentro do método `modificar()`, a variável `o` é uma **cópia da referência**. Quando ela recebe `new Objeto()`, essa cópia aponta para um novo objeto, **sem alterar a referência original** de `obj` em `main()`. Assim, `obj.x` permanece com valor 10.
+
+</details>
 
 ## Questão 4
 
@@ -132,6 +162,17 @@ c. null\
 d. Erro de compilação\
 e. Valor indefinido
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **b. "João"**
+
+**Justificativa:**\
+O método `copiar(a1, a2)` atribui a `a2 = a1`, mas **essa atribuição é local** ao escopo do método. Não há efeito sobre a variável `b` em `main()`, que continua referenciando o objeto original. Assim, `b.nome` ainda é `"João"`.
+
+</details>
+
 ## Questão 5
 
 Sobre os tipos por referência em Java, considere as afirmações:
@@ -148,6 +189,20 @@ b. Apenas I, II e III estão corretas\
 c. Apenas II e IV estão corretas\
 d. Apenas I e IV estão corretas\
 e. Todas estão corretas
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **a. Apenas I e II estão corretas**
+
+**Justificativa:**\
+I: Correta — atribuir uma referência a outra faz com que ambas apontem para o mesmo objeto.\
+II: Correta — métodos podem alterar os atributos do objeto passado.\
+III: Incorreta — **a troca de referências** dentro de um método **não afeta o escopo externo**, pois as referências são passadas **por valor**.\
+IV: Incorreta — a **referência é passada por valor**, mas o **objeto não é copiado**.
+
+</details>
 
 ## Questão 6
 
@@ -179,6 +234,16 @@ b. `Python`\
 c. `null`\
 d. Erro de compilação\
 e. Depende da JVM
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> &#x20;**b. `Python`**
+
+**Justificativa:** Em Java, objetos são manipulados por **referência**. As variáveis `a` e `b` **apontam para o mesmo objeto** na memória. Assim, qualquer alteração em `b.titulo` reflete diretamente em `a.titulo`.
+
+</details>
 
 ## Questão 7
 
@@ -213,6 +278,16 @@ c. `100`\
 d. `10`\
 e. Erro de compilação
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **b. `15`**
+
+**Justificativa:** Embora `c = new Caixa();` crie um novo objeto, **essa nova referência não afeta a variável original `caixa`** do `main`, pois o parâmetro foi passado por **valor da referência**. O incremento `c.valor += 10` é aplicado ao objeto original antes da reatribuição local de `c`.
+
+</details>
+
 ## Questão 8
 
 Assinale a alternativa que descreve corretamente uma **implicação técnica** de se trabalhar com tipos por referência em Java:
@@ -222,6 +297,18 @@ b. A atribuição de uma referência a outra cria uma cópia profunda (deep copy
 c. Ao passar um objeto para um método, uma cópia independente do objeto é criada\
 d. Modificações em atributos via uma referência afetam o mesmo objeto referenciado por outras variáveis\
 e. Objetos são sempre passados por referência real, permitindo substituição da variável original
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **d. Modificações em atributos via uma referência afetam o mesmo objeto referenciado por outras variáveis**
+
+**Justificativa:** Quando múltiplas variáveis apontam para o mesmo objeto, qualquer alteração no conteúdo **reflete para todas as variáveis que compartilham aquela referência**.&#x20;
+
+As alternativas a, b, c e e contêm erros conceituais comuns sobre igualdade, cópia e passagem de parâmetros.
+
+</details>
 
 ## Questão 9
 
@@ -248,6 +335,17 @@ b. O método compara os valores dos atributos `nome` de ambas as instâncias\
 c. O método verifica se os dois objetos apontam para o mesmo endereço de memória\
 d. O método retorna `true` apenas se os nomes forem iguais\
 e. O método lança exceção se `outra` for `null`
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. O método verifica se os dois objetos apontam para o mesmo endereço de memória**
+
+**Justificativa:**\
+O operador `==` em Java, quando aplicado a objetos, compara **identidade**, ou seja, verifica se ambas as variáveis referenciam exatamente **o mesmo objeto na memória**.
+
+</details>
 
 ## Questão 10
 
@@ -288,6 +386,16 @@ c. `3`\
 d. `99`\
 e. Erro de tempo de execução
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **d. `99`**
+
+**Justificativa:** Arrays em Java também são **objetos**, e a atribuição `copia = c.getDados();` copia a **referência**, não o conteúdo. Assim, qualquer modificação feita no array interno (`dados[0] = 99`) afeta o array `copia`, pois ambos apontam para o **mesmo array na memória**.
+
+</details>
+
 ## Questão 11
 
 Considere o seguinte trecho de código Java:
@@ -311,9 +419,25 @@ c. 0\
 d. Erro de compilação\
 e. Valor indefinido, pois `a` foi modificado indiretamente
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+
+
+</details>
+
 ## Questão 12
 
 Sobre o gerenciamento de memória em Java, considere as afirmativas:
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+
+
+</details>
 
 I. Objetos instanciados com `new` são armazenados na memória heap.\
 II. Variáveis locais e referências são armazenadas na stack.\
@@ -355,6 +479,14 @@ c. null\
 d. Erro de tempo de execução\
 e. Valor indefinido, pois `c1` foi sobrescrito
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+
+
+</details>
+
 ## Questão 14
 
 Sobre variáveis e gerenciamento de memória, assinale a alternativa correta:
@@ -364,4 +496,12 @@ b. Objetos em Java são automaticamente desalocados ao sair do escopo do método
 c. O coletor de lixo (garbage collector) remove objetos da stack após cada chamada de método\
 d. Referências locais a objetos são armazenadas na stack, mas os objetos em si ficam na heap\
 e. O coletor de lixo atua na stack para liberar variáveis primitivas
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+
+
+</details>
 

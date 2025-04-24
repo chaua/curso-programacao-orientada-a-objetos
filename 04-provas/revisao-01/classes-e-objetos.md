@@ -19,6 +19,16 @@ c. `Carro` é um objeto e `modelo` é seu construtor\
 d. `modelo` e `ano` são atributos da classe\
 e. A classe está completa pois já inclui herança
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> &#x20;**d. `modelo` e `ano` são atributos da classe**
+
+**Justificativa:** Os elementos declarados dentro da classe, fora de métodos, são atributos (variáveis de instância). As demais alternativas interpretam incorretamente os conceitos.
+
+</details>
+
 ## Questão 2
 
 Considere a seguinte classe Java:
@@ -41,6 +51,16 @@ c. `Pessoa p = new Pessoa(); p.dizerOla();`\
 d. `Pessoa p(); p.dizerOla();`\
 e. `new Pessoa().dizerOla;`
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> &#x20;**c. `Pessoa p = new Pessoa(); p.dizerOla();`**
+
+**Justificativa:** Em Java, cria-se um objeto com `new` e acessa-se métodos com ponto (`.`). As outras sintaxes pertencem a outras linguagens ou estão incorretas.
+
+</details>
+
 ## Questão 3
 
 Qual das opções define corretamente um **construtor** em Java?
@@ -50,6 +70,16 @@ b. Um método qualquer com o tipo de retorno `void`\
 c. Um atributo privado acessado com `get` e `set`\
 d. Um método chamado `main()`\
 e. Um método que só pode ser `private`
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **a. Um método com o mesmo nome da classe, sem tipo de retorno**
+
+**Justificativa:** O construtor deve ter o mesmo nome da classe e não deve declarar tipo de retorno, nem mesmo `void`.
+
+</details>
 
 ## Questão 4
 
@@ -75,6 +105,16 @@ c. O Java substitui com um método `main()` automático\
 d. O objeto será criado com valores aleatórios\
 e. Não é possível instanciar a classe sem construtor
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **b. O Java usa um construtor padrão sem parâmetros**
+
+**Justificativa:** Se **nenhum** construtor for definido, o Java fornece automaticamente um construtor padrão sem argumentos. No entanto, se **algum** construtor é declarado, o padrão não será mais gerado automaticamente.
+
+</details>
+
 ## Questão 5
 
 Dado o código abaixo:
@@ -95,6 +135,16 @@ c. A mensagem “Construtor chamado”\
 d. A criação do objeto falha por falta de argumentos\
 e. Apenas o nome da classe
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. A mensagem “Construtor chamado”**
+
+**Justificativa:** O construtor é chamado automaticamente durante a criação do objeto e imprime a mensagem especificada.
+
+</details>
+
 ## Questão 6
 
 Em Java, qual das alternativas representa corretamente o uso de **métodos com parâmetros**?
@@ -104,6 +154,16 @@ b. `void exibir(String nome) {}`\
 c. `public exibir(nome: String): void {}`\
 d. `function exibir(nome)`\
 e. `method exibir(String nome)`
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **b. `void exibir(String nome) {}`**
+
+**Justificativa:** A sintaxe correta em Java para um método com parâmetro inclui o tipo de retorno, nome do método e tipo do parâmetro entre parênteses.
+
+</details>
 
 ## Questão 7
 
@@ -135,6 +195,16 @@ c. Retornar o valor atual do atributo `saldo`\
 d. Remover o atributo `saldo`\
 e. Aplicar juros ao saldo
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. Retornar o valor atual do atributo `saldo`**
+
+**Justificativa:** Métodos `get` são usados para **acesso de leitura** a atributos privados. Ele permite encapsulamento e controle de acesso.
+
+</details>
+
 ## Questão 8
 
 Qual das alternativas **melhor expressa o conceito de destrutor** em Java?
@@ -144,6 +214,16 @@ b. Destrutores são métodos que removem métodos\
 c. Java não possui destrutores; utiliza o coletor de lixo (`garbage collector`)\
 d. Todo objeto deve ter um destrutor manual\
 e. Um destrutor é declarado com `~Classe()`
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. Java não possui destrutores; utiliza o coletor de lixo (`garbage collector`)**
+
+**Justificativa:** Em Java, o gerenciamento de memória é automático. O método `finalize()` pode ser sobrescrito, mas seu uso é obsoleto nas versões mais recentes.
+
+</details>
 
 ## Questão 9
 
@@ -155,6 +235,16 @@ c. Utilizar `public` nos métodos e `private` nos atributos\
 d. Fazer todos os métodos `private` para evitar herança\
 e. Criar atributos com `default` e métodos com `protected`
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. Utilizar `public` nos métodos e `private` nos atributos**
+
+**Justificativa:** Esta prática permite **ocultar os dados** e **expor somente as operações necessárias**, promovendo o encapsulamento e a segurança.
+
+</details>
+
 ## Questão 10
 
 Qual alternativa representa corretamente um **objeto** da classe `Livro` sendo criado e inicializado?
@@ -164,6 +254,18 @@ b. `Livro livro = Livro("Java", 2020);`\
 c. `Livro livro = new Livro("Java", 2020);`\
 d. `livro -> new Livro("Java", 2020);`\
 e. `Livro livro("Java", 2020);`
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. `Livro livro = new Livro("Java", 2020);`**
+
+**Justificativa:** A criação de objetos em Java usa `new`, seguido do construtor. É necessário especificar o tipo (`Livro`) e a variável (`livro`) corretamente.
+
+***
+
+</details>
 
 ## Questão 11
 
@@ -202,6 +304,20 @@ b. O método `depositar` deveria ser privado, pois apenas o objeto pode usá-lo\
 c. Falta a validação para saques com valor igual ao saldo\
 d. Os métodos `sacar` e `depositar` deveriam lançar exceções para valores inválidos\
 e. O construtor deveria chamar `getSaldo()` para inicializar o saldo
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **d. Os métodos `sacar` e `depositar` deveriam lançar exceções para valores inválidos**
+
+**Justificativa:** Embora o código verifique os valores, ele simplesmente ignora operações inválidas sem feedback.&#x20;
+
+As alternativas a e b estão incorretas (os atributos estão corretamente encapsulados e `depositar()` deve ser público). \
+A alternativa c está incorreta, pois a validação `valor <= saldo` cobre o caso. \
+A alternativa e não tem propósito funcional.
+
+</details>
 
 ## Questão 12
 
@@ -244,6 +360,16 @@ c. 3 e 2\
 d. 3 e 3\
 e. 2 e 2
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **b. 2 e 3**
+
+**Justificativa:** O atributo `contador` é `static`, ou seja, **compartilhado entre todas as instâncias**. A cada novo objeto, ele é incrementado.
+
+</details>
+
 ## Questão 13
 
 Sobre **sobrecarga de construtores**, considere:
@@ -272,6 +398,16 @@ b. O construtor com dois parâmetros substitui o de um parâmetro\
 c. Os dois construtores são válidos e sobrecarregados\
 d. A classe não compila por ambiguidade entre os métodos\
 e. Apenas o segundo construtor será executado em tempo de execução
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. Os dois construtores são válidos e sobrecarregados**
+
+**Justificativa:** A **sobrecarga** é válida quando os métodos (incluindo construtores) possuem **assinaturas diferentes** (número e/ou tipos de parâmetros). Não há conflito sintático ou semântico entre eles.
+
+</details>
 
 ## Questão 14
 
@@ -308,6 +444,17 @@ b. 0\
 c. Valor indefinido\
 d. Erro de compilação\
 e. Exceção de tempo de execução
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **b. 0**
+
+**Justificativa:** O valor inicial de um `int` em Java é 0. Como `setValor(-10)` não satisfaz a condição `valor > 0`, a atribuição **não ocorre**, mantendo o valor padrão `0`.\
+Não há erro nem exceção.
+
+</details>
 
 ## Questão 15
 
@@ -358,6 +505,17 @@ d. Dell - 4GB\
 Dell - 8GB\
 e. Erro de compilação por chamada encadeada de construtores
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **a. Genérica - 4GB**\
+>   **Dell - 8GB**
+
+**Justificativa:** O construtor `Computador()` chama o construtor `Computador(String, int)` com os parâmetros `"Genérica", 4`. O construtor `Computador(String)` chama o mesmo com `"Dell", 8`. A sobrecarga é válida e o encadeamento com `this()` é permitido e corretamente resolvido em tempo de compilação.
+
+</details>
+
 ## Questão 16
 
 Sobre o comportamento de destrutores em Java, considere as afirmações:
@@ -374,6 +532,21 @@ b. Apenas II e III estão corretas\
 c. Apenas II e IV estão corretas\
 d. Apenas I, II e III estão corretas\
 e. Todas estão corretas
+
+<details>
+
+<summary></summary>
+
+> **b. Apenas II e III estão corretas**
+
+**Justificativa:**
+
+* I está incorreta: o coletor de lixo é assíncrono e não age obrigatoriamente ao fim do `main()`.
+* II é correta: `finalize()` existia como método pseudo-destrutor, mas foi **deprecated** a partir do Java 9.
+* III é correta: `System.gc()` **solicita** coleta, mas o comportamento é não determinístico.
+* IV é incorreta: Java **não exige** destrutores, pois a gestão de memória é automática.
+
+</details>
 
 ## Questão 17
 
@@ -400,6 +573,17 @@ b. Compila, mas lança exceção de tempo de execução\
 c. Gera erro de compilação por uso de variável não inicializada\
 d. Gera erro de compilação por sobrecarga de construtores inválida\
 e. Gera warning, mas é permitido pela JVM
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. Gera erro de compilação por uso de variável não inicializada**
+
+**Justificativa:**\
+Na linha `this(x);`, a variável `x` da instância ainda **não foi inicializada**, e está sendo usada como argumento. Isso **viola as regras de inicialização de variáveis locais** em Java, resultando em erro de compilação. Variáveis de instância são inicializadas implicitamente, mas variáveis locais (como nesse caso, o `x` do construtor) **não**.
+
+</details>
 
 ## Questão 18
 
@@ -432,6 +616,17 @@ c. `PI` pertence à instância e só pode ser acessado com `this.PI`\
 d. `PI` é constante e compartilhado entre todas as instâncias da classe\
 e. `PI` só pode ser acessado dentro do método `calcularArea`
 
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **d. `PI` é constante e compartilhado entre todas as instâncias da classe**
+
+**Justificativa:**\
+`static` indica que o membro pertence à classe e **não à instância**. O modificador `final` torna o valor **imutável após inicialização**. Assim, `PI` é constante, única, e comum a todas as instâncias da classe `Circulo`. As demais alternativas contradizem o comportamento de `static final`.
+
+</details>
+
 ## Questão 19
 
 Considere a classe a seguir:
@@ -463,6 +658,21 @@ b. O método `resumo()` viola encapsulamento por acessar atributos diretamente\
 c. A classe possui alta coesão, pois seus métodos manipulam apenas atributos da própria instância\
 d. O método `depositar()` deveria ser `static`, pois não depende da instância\
 e. A falta de `final` nos atributos compromete a integridade do objeto
+
+<details>
+
+<summary><span data-gb-custom-inline data-tag="emoji" data-code="270f">✏️</span> Resposta</summary>
+
+> **c. A classe possui alta coesão, pois seus métodos manipulam apenas atributos da própria instância**
+
+**Justificativa:**\
+**Alta coesão** implica que os métodos de uma classe estão fortemente relacionados aos dados da classe. Os métodos `depositar` e `resumo` lidam exclusivamente com os atributos `titular` e `saldo`, o que caracteriza coesão adequada.&#x20;
+
+As alternativas a e b são incorretas (os atributos são privados e acessados corretamente). \
+A alternativa d ignora que `depositar` depende do saldo da **instância**. \
+A alternativa e trata do uso de `final`, que não é obrigatório nesse contexto.
+
+</details>
 
 ## Questão 20
 
@@ -497,3 +707,16 @@ b. `UNIDADE` precisa ser inicializado no construtor por ser `final`\
 c. `UNIDADE` pode ser alterado em tempo de execução se não for `static`\
 d. `id` é um atributo de instância imutável, e `UNIDADE` é uma constante de classe\
 e. `UNIDADE` deveria ser removido para evitar dependência de valor fixo
+
+<details>
+
+<summary></summary>
+
+> **d. `id` é um atributo de instância imutável, e `UNIDADE` é uma constante de classe**
+
+**Justificativa:**\
+O atributo `id` é `final`, o que significa que **deve ser inicializado exatamente uma vez**, geralmente no construtor, e **não pode ser alterado** posteriormente. Já `UNIDADE` é uma constante, pois é `static final`, e seu valor é compartilhado entre todas as instâncias.&#x20;
+
+As alternativas a, b, c e e violam os princípios de imutabilidade e boas práticas de definição de constantes.
+
+</details>
