@@ -33,7 +33,7 @@
     * [Tipos referência](04-provas/revisao-01/tipos-referencia.md)
     * [Encapsulamento](04-provas/revisao-01/encapsulamento.md)
     * [Relacionamento entre classes](04-provas/revisao-01/relacionamento-entre-classes.md)
-  * [📝 Prova 01](04-provas/prova-01.md)
+  * [📝 Provas](04-provas/provas.md)
   * [📝 Prova 02](04-provas/prova-02.md)
   * [📊 Resultados](04-provas/resultados.md)
 * [Trabalhos](05-trabalhos/README.md)
