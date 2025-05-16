@@ -67,7 +67,7 @@ public class Main {
 }
 ```
 
-## Jogo de RPG
+## 2. Jogo de RPG
 
 Implemente uma hierarquia de classes representando personagens de um jogo de RPG. Todos os personagens possuem um nome, pontos de vida (HP) e pontos de ataque base. Cada subclasse implementa um comportamento específico para atacar e defender. Além disso, crie um método `usarHabilidadeEspecial()` com efeitos distintos por classe.
 
