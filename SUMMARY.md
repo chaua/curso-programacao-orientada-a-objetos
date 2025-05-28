@@ -40,5 +40,6 @@
   * [📄 Estudo Dirigido 01](05-trabalhos/estudo-dirigido-01.md)
   * [📄 Estudo Dirigido 02](05-trabalhos/estudo-dirigido-02.md)
   * [📄 Estudo Dirigido 03](05-trabalhos/estudo-dirigido-03.md)
+  * [📄 Estudo Dirigido 04](05-trabalhos/estudo-dirigido-04.md)
 * [Materiais de Apoio](06-materiais-de-apoio/README.md)
   * [📚 Leitura Complementar](06-materiais-de-apoio/leitura-complementar.md)
