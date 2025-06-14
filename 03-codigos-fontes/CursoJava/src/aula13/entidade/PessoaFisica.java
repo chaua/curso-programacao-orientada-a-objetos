@@ -1,7 +1,12 @@
-package aula13;
+package aula13.entidade;
 
 public class PessoaFisica extends ContatoBase {
     private String cpf;
+
+    public PessoaFisica(int id, String nome, String email, String telefone, String cpf) {
+        super(id, nome, email, telefone);
+        this.cpf = cpf;
+    }
 
     public PessoaFisica(String nome, String email, String telefone, String cpf) {
         super(nome, email, telefone);
@@ -19,6 +24,5 @@ public class PessoaFisica extends ContatoBase {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
 
 }

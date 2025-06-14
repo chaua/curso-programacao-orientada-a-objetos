@@ -1,5 +1,10 @@
-package aula13;
+package aula13.view;
 
+import aula13.entidade.Contato;
+import aula13.entidade.PessoaFisica;
+import aula13.entidade.PessoaJuridica;
+
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -19,8 +24,12 @@ public class ContatoView {
     public int lerOpcao() {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.print(">: ");
-        return teclado.nextInt();
+        try {
+            System.out.print(">: ");
+            return teclado.nextInt();
+        } catch (InputMismatchException e) {
+            return 0;
+        }
     }
 
     public Contato exibirAdicionarPessoaFisica() {
@@ -66,11 +75,20 @@ public class ContatoView {
         System.out.println("=== Contatos ===");
 
         for (Contato contato : contatos) {
-            System.out.printf("| %10s | %10s | %10s |\n", contato.getNome(),
+            System.out.printf("| %-25s | %-35s | %-15s | %-5s | %-20s |\n",
+                    contato.getNome(),
                     contato.getEmail(),
-                    contato.getTelefone());
+                    contato.getTelefone(),
+                    contato instanceof PessoaFisica ? "CPF" : "CNPJ",
+                    contato instanceof PessoaFisica ? ((PessoaFisica) contato).getCpf() : ((PessoaJuridica) contato).getCnpj());
         }
         System.out.println();
 
+    }
+
+    public void exibirMensagemDeErro(String s) {
+        System.out.println("!!!!!!");
+        System.out.println(s);
+        System.out.println("!!!!!!");
     }
 }

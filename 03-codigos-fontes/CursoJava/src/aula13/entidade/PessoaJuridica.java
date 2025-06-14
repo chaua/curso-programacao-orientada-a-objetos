@@ -1,7 +1,12 @@
-package aula13;
+package aula13.entidade;
 
 public class PessoaJuridica extends ContatoBase {
     private String cnpj;
+
+    public PessoaJuridica(int id, String nome, String email, String telefone, String cnpj) {
+        super(id, nome, email, telefone);
+        this.cnpj = cnpj;
+    }
 
     public PessoaJuridica(String nome, String email, String telefone, String cnpj) {
         super(nome, email, telefone);

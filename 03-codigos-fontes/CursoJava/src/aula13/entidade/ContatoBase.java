@@ -1,11 +1,18 @@
-package aula13;
+package aula13.entidade;
 
-public class ContatoBase implements Contato{
+public class ContatoBase implements Contato {
+    private int id;
     private String nome;
     private String email;
     private String telefone;
 
+    public ContatoBase(int id, String nome, String email, String telefone) {
+        this(nome, email, telefone);
+        this.id = id;
+    }
+
     public ContatoBase(String nome, String email, String telefone) {
+        this.id = 0;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
@@ -13,6 +20,15 @@ public class ContatoBase implements Contato{
 
     public ContatoBase() {
         this("", "", "");
+    }
+
+    @Override
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -35,15 +51,8 @@ public class ContatoBase implements Contato{
         return telefone;
     }
 
-    @Override
-    public String toCSV() {
-        return nome + "," + telefone + "," + email;
-    }
-
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-
-
 
 }
